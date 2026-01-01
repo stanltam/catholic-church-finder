@@ -1112,5 +1112,144 @@
         "time": "7:00 am (Cantonese)"
       }
     ]
+  },
+  "st andrews": {
+    "originalName": "St. Andrew's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am, 9:00 am, 10:30 am, 12:00 noon, 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "st benedict": {
+    "originalName": "St. Benedict Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am, 9:00 am, 10:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:00 noon (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "ss peter and paul": {
+    "originalName": "SS. Peter and Paul Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am, 11:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am, 12:30 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 5:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "st alfreds": {
+    "originalName": "St. Alfred's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am, 9:00 am, 10:30 am, 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st thomas the apostle": {
+    "originalName": "St. Thomas the Apostle Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am, 11:00 am, 12:30 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 5:00 pm, 7:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "st matthew the apostle": {
+    "originalName": "St. Matthew the Apostle Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "8:30 am (Cantonese)"
+      }
+    ]
+  },
+  "st jeromes": {
+    "originalName": "St. Jerome's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am, 9:30 am, 11:00 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 8:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
   }
 }

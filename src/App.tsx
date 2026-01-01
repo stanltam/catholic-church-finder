@@ -88,6 +88,7 @@ function App() {
   const [selectedChurchId, setSelectedChurchId] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResultName, setSearchResultName] = useState<string | null>(null);
+  const [sortOption, setSortOption] = useState<'distance' | 'time'>('distance');
 
   const fetchChurches = async (lat: number, lon: number) => {
     setLoading(true);
@@ -158,6 +159,26 @@ function App() {
     return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
   };
 
+  const formatMinutes = (minutes: number) => {
+    const h = Math.floor(minutes / 60);
+    const m = minutes % 60;
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    const h12 = h % 12 || 12;
+    return `${h12}:${m.toString().padStart(2, '0')} ${ampm}`;
+  };
+
+  const sortedChurches = [...churches].sort((a, b) => {
+    if (sortOption === 'time') {
+        const timeA = a.nextMassTime ?? Infinity;
+        const timeB = b.nextMassTime ?? Infinity;
+        if (timeA === timeB) {
+             return (a.distance || 0) - (b.distance || 0); // fallback to distance
+        }
+        return timeA - timeB;
+    }
+    return (a.distance || 0) - (b.distance || 0);
+  });
+
   const selectedChurch = churches.find(c => c.id === selectedChurchId);
 
   return (
@@ -207,7 +228,7 @@ function App() {
                      </Marker>
                 )}
                 
-                {churches.map(church => (
+                {sortedChurches.map(church => (
                   <Marker 
                     key={church.id} 
                     position={[church.lat, church.lon]}
@@ -221,6 +242,12 @@ function App() {
                         {church.address && <span className="popup-address">{church.address}<br /></span>}
                         <span className="popup-distance">{church.distance} km away</span><br />
                         
+                        {church.nextMassTime && (
+                             <div style={{ color: '#e67e22', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+                                Next Mass Today: {formatMinutes(church.nextMassTime)}
+                             </div>
+                        )}
+
                         {church.massSchedule && (
                             <div className="popup-schedule">
                                 <strong>Mass Schedule:</strong>
@@ -280,11 +307,25 @@ function App() {
         </div>
         
         <div className="list-container">
-          <div className="list-header">
-            <h2>Nearby Churches ({churches.length})</h2>
+          <div className="list-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h2 style={{ fontSize: '1.1rem' }}>Nearby ({sortedChurches.length})</h2>
+            <div className="sort-controls">
+                <button 
+                    className={`sort-btn ${sortOption === 'distance' ? 'active' : ''}`}
+                    onClick={() => setSortOption('distance')}
+                >
+                    Distance
+                </button>
+                <button 
+                    className={`sort-btn ${sortOption === 'time' ? 'active' : ''}`}
+                    onClick={() => setSortOption('time')}
+                >
+                    Next Mass
+                </button>
+            </div>
           </div>
           <ul className="church-list">
-            {churches.map(church => (
+            {sortedChurches.map(church => (
               <li 
                 key={church.id} 
                 className={`church-item ${selectedChurchId === church.id ? 'active' : ''}`}
@@ -297,11 +338,15 @@ function App() {
                       <MapPin size={14} style={{ display: 'inline', marginRight: '4px' }} />
                       {church.distance} km
                   </div>
-                  {church.massSchedule && (
-                    <div style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: '#555' }}>
-                        <strong>Mass Schedule Available</strong>
+                  {church.nextMassTime ? (
+                    <div style={{ fontSize: '0.85rem', marginTop: '0.4rem', color: '#e67e22', fontWeight: 600 }}>
+                        Next Mass: {formatMinutes(church.nextMassTime)}
                     </div>
-                  )}
+                  ) : church.massSchedule ? (
+                    <div style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: '#555' }}>
+                        Mass Schedule Available
+                    </div>
+                  ) : null}
                 </div>
                 <div className="church-actions">
                   <a 
