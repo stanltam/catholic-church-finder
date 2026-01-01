@@ -4,7 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { type Church, findNearbyChurches } from './services/churchService';
 import './App.css';
-import { MapPin, Navigation, Cross, ExternalLink } from 'lucide-react';
+import { MapPin, Navigation, Cross, ExternalLink, Locate } from 'lucide-react';
 
 // Fix for default Leaflet marker icons in React
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -35,6 +35,40 @@ function MapUpdater({ center }: { center: [number, number] }) {
     map.setView(center, 14);
   }, [center, map]);
   return null;
+}
+
+function RecenterControl({ location }: { location: [number, number] }) {
+  const map = useMap();
+  
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    map.setView(location, 15);
+  };
+
+  return (
+    <div className="leaflet-top leaflet-left" style={{ marginTop: '80px', marginLeft: '10px' }}>
+      <div className="leaflet-control leaflet-bar">
+        <a 
+            href="#" 
+            title="Show my location"
+            onClick={handleClick}
+            style={{ 
+                backgroundColor: 'white', 
+                width: '34px', 
+                height: '34px', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                color: '#333',
+                cursor: 'pointer'
+            }}
+        >
+            <Locate size={20} />
+        </a>
+      </div>
+    </div>
+  );
 }
 
 function App() {
@@ -165,6 +199,8 @@ function App() {
 
                 {/* If a church is selected from the list, pan to it */}
                 {selectedChurch && <MapUpdater center={[selectedChurch.lat, selectedChurch.lon]} />}
+                
+                <RecenterControl location={location} />
               </MapContainer>
             )}
         </div>
