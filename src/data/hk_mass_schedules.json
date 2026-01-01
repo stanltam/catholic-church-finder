@@ -1,0 +1,1116 @@
+{
+  "cathedral of the immaculate conception": {
+    "originalName": "Cathedral of the Immaculate Conception",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00am,11:30 am,6:00pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "9:30am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:00pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 a.m. (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:45 a.m.,6:00pm (Cantonese)"
+      },
+      {
+        "type": "Special Masses",
+        "time": "Special Mass for China : 2nd Thursday at 6:00 p.m.,Special Vocation Mass: 3rd Thursday at 6:00 p.m.,Holy Hour in honour of Sacred Heart of Jesus: 1st Friday 6:00 p.m. (Cantonese)"
+      }
+    ]
+  },
+  "immaculate heart of mary catholic centre": {
+    "originalName": "Immaculate Heart of Mary Chapel (Catholic Centre)",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30am,11:30am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "1:15 p.m. on Saturday,4:30 p.m. on Saturday (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon., Tue., Thur. 8:00 a.m. (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Wed., Fri., Sat. 8:00 a.m.,Mon. to Fri. 5:30 p.m. (English)"
+      },
+      {
+        "type": "Special Masses",
+        "time": "1st Friday 1:15 p.m. (English)"
+      }
+    ]
+  },
+  "holy cross": {
+    "originalName": "HOLY CROSS CHURCH",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00am,9:30am,11:00 am,6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 3:45 pm,Saturday 6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "salesian": {
+    "originalName": "Salesian Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00am (Cantonese)"
+      }
+    ]
+  },
+  "tai koo shing": {
+    "originalName": "Tai Koo Shing Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 am,10:00 am,11:30 am (Cantonese)"
+      }
+    ]
+  },
+  "our lady of lourdes": {
+    "originalName": "Our Lady of Lourdes Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "11:00 am (Cantonese)"
+      }
+    ]
+  },
+  "wah fu estate": {
+    "originalName": "Wah Fu Estate Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (Cantonese)"
+      }
+    ]
+  },
+  "our lady of mount carmel": {
+    "originalName": "Our Lady Of Mount Carmel Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 am,10:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:45 am,1:30 pm,6:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 2:30 pm,Saturday 3:45 pm,Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "our lady of the rosary": {
+    "originalName": "Our Lady Of The Rosary Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:30 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st annes": {
+    "originalName": "St. Anne's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "5th Sunday of the month: 7:15 am (Tagalog)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "8:45 am,11:15 am (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:00 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:00 pm on Saturday (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon. to Sat. 9:15 am (English)"
+      }
+    ]
+  },
+  "carmelite monastery": {
+    "originalName": "Carmelite Monastery",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Tue., Wed., Fri., Sat. 7:15 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon., Thur. 7:15 am (English)"
+      }
+    ]
+  },
+  "martyr saints of china": {
+    "originalName": "Martyr Saints of China Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (English)"
+      }
+    ]
+  },
+  "cheshire home chung hom kok": {
+    "originalName": "Cheshire Home, Chung Hom Kok",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "Every 3rd Sunday of the month: 3:30 pm (Cantonese)"
+      }
+    ]
+  },
+  "st anthonys": {
+    "originalName": "St. Anthony's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:00 am,8:30 am,10:00 am,6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "8:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am,6:00 pm (Cantonese)"
+      }
+    ]
+  },
+  "our lady seat of wisdom": {
+    "originalName": "Our Lady Seat of Wisdom Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:15 am,12:30 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:00 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "5:45 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "st josephs": {
+    "originalName": "St. Joseph's Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "11:00 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "18:00 p.m. (Mandarin)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (English)"
+      }
+    ]
+  },
+  "st judes": {
+    "originalName": "St. Jude's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:15 am,8:30 am,10:00 am,6:30 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:00 noon,5:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:30 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "quarry bay": {
+    "originalName": "Quarry Bay Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (Cantonese)"
+      }
+    ]
+  },
+  "transfiguration": {
+    "originalName": "Transfiguration Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am,11:15 am (Cantonese)"
+      }
+    ]
+  },
+  "st margaret marys": {
+    "originalName": "St. Margaret Mary's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:00 am,8:15 am,9:30 am,11:00 am,5:30 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1/F., Parish Centre: 11:00 am (Japanese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:30 pm (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1/F., Parish Centre: 5:00 pm (Spanish)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "5:30 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon. to Sat. 7:00 am,Mon. to Sat. except Thursday 7:45 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Thursday 7:45 am (English)"
+      }
+    ]
+  },
+  "christ the king": {
+    "originalName": "Christ the King Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 am,10:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:30 am (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1:00 pm (Indonesian)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Monday and Friday 6:40 am (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Tues. to Thurs and Sat. 6:40 am (Cantonese)"
+      }
+    ]
+  },
+  "rosaryhill": {
+    "originalName": "Rosaryhill Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (French)"
+      }
+    ]
+  },
+  "wah yan college": {
+    "originalName": "Wah Yan College Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (English)"
+      }
+    ]
+  },
+  "st peters": {
+    "originalName": "St. Peter's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:30 am,11:00 am,7:00 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "2:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "7:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "star of the sea": {
+    "originalName": "Star of the Sea Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:00 noon (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "8:30 pm Sat. (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "epiphany": {
+    "originalName": "Epiphany Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:45am (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon., Tue., Thur. & Sat. 7:30 a.m.,Fri. 8:00 p.m. (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Wed. 7:30 a.m. (Cantonese)"
+      }
+    ]
+  },
+  "our lady of perpetual help": {
+    "originalName": "Our Lady of Perpetual Help Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "5:00pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Sat. 10:00am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Mon. to Thur. 7:30am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Fri. 8:00pm,Every First Wed. 8:30pm (English)"
+      }
+    ]
+  },
+  "our lady queen of peace": {
+    "originalName": "Our Lady Queen of Peace Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Sat. 8:30 pm (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Friday 8:00 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Wednesday 8:30 pm (English)"
+      }
+    ]
+  },
+  "our lady of fatima": {
+    "originalName": "OUR LADY OF FATIMA CHURCH",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:20 am (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Monday to Saturday 7:20 am (Cantonese)"
+      }
+    ]
+  },
+  "visitation": {
+    "originalName": "Visitation Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 a.m.,12:00 noon at Tung Chung Catholic School (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 a.m. (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 5:00 p.m. (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Sat.6:30 pm at Tung Chung Catholic School (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Monday to Wednesday 9:00 a.m. (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Thursday to Friday 8:00 p.m. at Chapel. (English)"
+      }
+    ]
+  },
+  "trinity": {
+    "originalName": "Trinity Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "11:00 a.m. (English) at DBIS (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 2:15 p.m. (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 3:30 pm at Wei Lun Primary School. (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Thursday 9:00 a.m.,Tuesday to Wednesday 8:30 p.m. (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Friday 9:00 a.m. at Chapel. (Cantonese)"
+      }
+    ]
+  },
+  "st marys": {
+    "originalName": "St. Mary's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30am,9:00am,10:30am,12:00 noon (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "8:00am,9:30am,11:00am,6:00pm (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 7:00pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00am (Cantonese)"
+      }
+    ]
+  },
+  "christ the worker": {
+    "originalName": "Christ The Worker Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:30 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "holy family": {
+    "originalName": "Holy Family Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:30 am,6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "4:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 5:00 pm (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "st francis xavier": {
+    "originalName": "St. Francis Xavier Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "5:30 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Wednesday and Friday 7:30 a.m. (Cantonese)"
+      }
+    ]
+  },
+  "mary help of christians": {
+    "originalName": "Mary Help Of Christians Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,8:45 am,10:00 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 8:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "holy spirit": {
+    "originalName": "Holy Spirit Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (Cantonese)"
+      }
+    ]
+  },
+  "ling to": {
+    "originalName": "Ling To Mass Centre",
+    "schedule": [
+      {
+        "type": "Weekday Masses",
+        "time": "Wednesday 7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "mother of good counsel": {
+    "originalName": "Mother Of Good Counsel Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,11:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1:00 pm (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "3:00 pm (Srilanka)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "8:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "st vincents": {
+    "originalName": "St. Vincent's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Monday to Friday: 6:30 pm (Cantonese)"
+      }
+    ]
+  },
+  "notre dame": {
+    "originalName": "Notre Dame Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am,9:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1st Sunday 11:30 am (Polish)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "3rd Sunday 2:00 pm (Tagalog)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "4:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 8:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st eugene de mazenod": {
+    "originalName": "St. Eugene de Mazenod Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (Cantonese)"
+      }
+    ]
+  },
+  "our lady of china": {
+    "originalName": "Our Lady Of China Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am (Cantonese)"
+      }
+    ]
+  },
+  "our lady queen of angels": {
+    "originalName": "Our Lady Queen Of Angels Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (Cantonese)"
+      }
+    ]
+  },
+  "resurrection": {
+    "originalName": "Resurrection Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "3:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "immaculate heart of mary": {
+    "originalName": "Immaculate Heart of Mary Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 a.m. (Cantonese)"
+      }
+    ]
+  },
+  "rosary": {
+    "originalName": "Rosary Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,10:00 am,11:15 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "8:45 am,12:30 am,7:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "7:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:30 am,Thurday & Friday 6:30 p.m. (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "8:00 am,Monday, Tuesday, Wednesday 6:30 pm (English)"
+      }
+    ]
+  },
+  "st peters kowloon": {
+    "originalName": "St. Peter's Church (Kowloon)",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:00 am,6:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "6:00 pm on Saturday (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Tuesday to Friday 6:30 pm (Monday: No Mass) (English)"
+      }
+    ]
+  },
+  "st bonaventure": {
+    "originalName": "St. Bonaventure Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:15 am,11:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "7:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "st bonaventure college": {
+    "originalName": "St. Bonaventure College Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (Except the 1st Sunday of the Month & Sunday School holidays) (Cantonese)"
+      }
+    ]
+  },
+  "st edwards": {
+    "originalName": "St. Edward's Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:45 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "7:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Monday to Saturday 7:15 am (Cantonese)"
+      }
+    ]
+  },
+  "st francis of assisi": {
+    "originalName": "St. Francis Of Assisi Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:30 am,11:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "9:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "7:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st john the baptist": {
+    "originalName": "St. John The Baptist Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:15 am,8:45 am,10:15 am,11:45 am,8:00 pm (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "8:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st josephs kowloon bay": {
+    "originalName": "St. Joseph's Church - Kowloon Bay",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "8:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "12:30 pm (Vietnamese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "4:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st lawrences": {
+    "originalName": "St. Lawrence's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:30 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st charles": {
+    "originalName": "St. Charles' Chapel",
+    "schedule": [
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 4:00 pm (Cantonese)"
+      }
+    ]
+  },
+  "st patricks": {
+    "originalName": "St. Patrick's Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,9:00 am,10:45 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "1:00 pm (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "8:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  },
+  "st pauls": {
+    "originalName": "St. Paul's Mass Centre",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:30 am,8:30 am,10:00 am (Cantonese)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "5:00 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:10 am (Cantonese)"
+      }
+    ]
+  },
+  "st teresas": {
+    "originalName": "St. Teresa's Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "7:15 am,10:00 am,12:45 pm,6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "8:30 am,11:30 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "Saturday 4:15 pm,Saturday 6:00 pm (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "6:45 am (English)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:45 am,6:00 pm (Cantonese)"
+      }
+    ]
+  },
+  "st ignatius": {
+    "originalName": "St. Ignatius Chapel",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "10:30 am (English)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:45 am (Mandarin)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:40 am (Cantonese/English) (Cantonese)"
+      }
+    ]
+  },
+  "diocesan pastoral centre for the disabled": {
+    "originalName": "Diocesan Pastoral Centre For the Disabled",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "1st Sunday 12:00 noon for Disabled,1st Sunday 5:00 pm for the Deaf (with sign-language) (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "Thursday 7:00 pm (Cantonese)"
+      }
+    ]
+  },
+  "st james": {
+    "originalName": "St. James' Church",
+    "schedule": [
+      {
+        "type": "Sunday Masses",
+        "time": "9:00 am (Cantonese)"
+      },
+      {
+        "type": "Sunday Masses",
+        "time": "11:00 am (English)"
+      },
+      {
+        "type": "Anticipated Sunday Masses",
+        "time": "4:30 pm on Saturday (Cantonese)"
+      },
+      {
+        "type": "Weekday Masses",
+        "time": "7:00 am (Cantonese)"
+      }
+    ]
+  }
+}
