@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { type Church, findNearbyChurches } from './services/churchService';
+import { type Church, findNearbyChurches, geocodeLocation } from './services/churchService';
 import './App.css';
-import { MapPin, Navigation, Cross, ExternalLink, Locate } from 'lucide-react';
+import { MapPin, Navigation, Cross, ExternalLink, Locate, Search } from 'lucide-react';
 
 // Fix for default Leaflet marker icons in React
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -29,6 +29,16 @@ const userIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
+// Icon for search result center
+const searchIcon = new L.Icon({
+    iconUrl: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiBmaWxsPSIjZTkxZTYzIj48cGF0aCBkPSJNMTIgMEM3LjU4IDAgNCAzLjU4IDQgOGMwIDQuNDIgOCAxNiA4IDE2czgtMTEuNTggOC0xNmMwLTQuNDItMy41OC04LTgtOHptMCAxMmEyIDIgMCAxIDEgMC00IDIgMiAwIDAgMSAwIDR6Ii8+PC9zdmc+',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [36, 36],
+    iconAnchor: [18, 36],
+    popupAnchor: [0, -34],
+    shadowSize: [41, 41]
+});
+
 function MapUpdater({ center }: { center: [number, number] }) {
   const map = useMap();
   useEffect(() => {
@@ -37,13 +47,11 @@ function MapUpdater({ center }: { center: [number, number] }) {
   return null;
 }
 
-function RecenterControl({ location }: { location: [number, number] }) {
-  const map = useMap();
-  
+function RecenterControl({ onLocate, hasLocation }: { onLocate: () => void, hasLocation: boolean }) {
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     e.preventDefault();
-    map.setView(location, 15);
+    onLocate();
   };
 
   return (
@@ -64,7 +72,7 @@ function RecenterControl({ location }: { location: [number, number] }) {
                 cursor: 'pointer'
             }}
         >
-            <Locate size={20} />
+            <Locate size={20} className={!hasLocation ? 'text-gray-400' : ''} />
         </a>
       </div>
     </div>
@@ -72,41 +80,75 @@ function RecenterControl({ location }: { location: [number, number] }) {
 }
 
 function App() {
-  const [location, setLocation] = useState<[number, number] | null>(null);
+  const [userLocation, setUserLocation] = useState<[number, number] | null>(null);
+  const [mapCenter, setMapCenter] = useState<[number, number] | null>(null);
   const [churches, setChurches] = useState<Church[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedChurchId, setSelectedChurchId] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResultName, setSearchResultName] = useState<string | null>(null);
 
-  useEffect(() => {
+  const fetchChurches = async (lat: number, lon: number) => {
+    setLoading(true);
+    try {
+        const results = await findNearbyChurches(lat, lon);
+        setChurches(results);
+        setError(null);
+    } catch (err) {
+        console.error(err);
+        setError("Failed to fetch nearby churches. Please try again later.");
+    } finally {
+        setLoading(false);
+    }
+  };
+
+  const refreshLocation = () => {
     if (!navigator.geolocation) {
       setError("Geolocation is not supported by your browser.");
       setLoading(false);
       return;
     }
 
+    setLoading(true);
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
-        setLocation([latitude, longitude]);
-        
-        try {
-          const results = await findNearbyChurches(latitude, longitude);
-          setChurches(results);
-        } catch (err) {
-          console.error(err);
-          setError("Failed to fetch nearby churches. Please try again later.");
-        } finally {
-          setLoading(false);
-        }
+        setUserLocation([latitude, longitude]);
+        setMapCenter([latitude, longitude]);
+        setSearchResultName(null); // Clear search result when going back to GPS
+        fetchChurches(latitude, longitude);
       },
       (err) => {
         console.error(err);
-        setError("Unable to retrieve your location. Please allow location access.");
+        setError("Unable to retrieve your location. Please allow location access or search for a location manually.");
         setLoading(false);
-      }
+      },
+      { enableHighAccuracy: true }
     );
+  };
+
+  useEffect(() => {
+    refreshLocation();
   }, []);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+
+    setLoading(true);
+    const result = await geocodeLocation(searchQuery);
+    if (result) {
+        setMapCenter([result.lat, result.lon]);
+        setSearchResultName(result.display_name);
+        fetchChurches(result.lat, result.lon);
+        // Clear selection when searching new area
+        setSelectedChurchId(null);
+    } else {
+        alert("Location not found. Please try a different query.");
+        setLoading(false);
+    }
+  };
 
   const handleChurchClick = (church: Church) => {
     setSelectedChurchId(church.id);
@@ -118,43 +160,52 @@ function App() {
 
   const selectedChurch = churches.find(c => c.id === selectedChurchId);
 
-  if (loading) {
-    return (
-      <div className="loading-overlay">
-        <Navigation className="animate-spin" size={48} color="#2c3e50" />
-        <p>Finding nearest Catholic churches...</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="error-overlay">
-        <p>{error}</p>
-        <button className="btn" onClick={() => window.location.reload()}>Retry</button>
-      </div>
-    );
-  }
-
   return (
     <div className="app-container">
       <header>
         <h1><Cross size={24} /> Catholic Church Finder</h1>
+        <form onSubmit={handleSearch} className="search-bar">
+            <input 
+                type="text" 
+                placeholder="Search city or place..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="search-input"
+            />
+            <button type="submit" className="search-btn">
+                <Search size={18} />
+            </button>
+        </form>
       </header>
       
       <div className="content">
         <div className="map-container">
-            {location && (
-              <MapContainer center={location} zoom={13} scrollWheelZoom={true}>
+            {/* Show map if we have a center (either from geo or search) */}
+            {mapCenter ? (
+              <MapContainer center={mapCenter} zoom={13} scrollWheelZoom={true}>
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={location} icon={userIcon}>
-                  <Popup>
-                    You are here
-                  </Popup>
-                </Marker>
+                
+                {/* User Location Marker */}
+                {userLocation && (
+                    <Marker position={userLocation} icon={userIcon}>
+                    <Popup>
+                        You are here
+                    </Popup>
+                    </Marker>
+                )}
+
+                {/* Search Result Marker (if different from user location and search happened) */}
+                {searchResultName && mapCenter && (
+                     <Marker position={mapCenter} icon={searchIcon}>
+                        <Popup>
+                            <strong>Search Location</strong><br/>
+                            {searchResultName}
+                        </Popup>
+                     </Marker>
+                )}
                 
                 {churches.map(church => (
                   <Marker 
@@ -197,11 +248,34 @@ function App() {
                   </Marker>
                 ))}
 
-                {/* If a church is selected from the list, pan to it */}
-                {selectedChurch && <MapUpdater center={[selectedChurch.lat, selectedChurch.lon]} />}
+                {/* If a church is selected, pan to it. Otherwise pan to mapCenter when it changes */}
+                {selectedChurch ? 
+                    <MapUpdater center={[selectedChurch.lat, selectedChurch.lon]} /> : 
+                    <MapUpdater center={mapCenter} />
+                }
                 
-                <RecenterControl location={location} />
+                <RecenterControl onLocate={refreshLocation} hasLocation={!!userLocation} />
               </MapContainer>
+            ) : (
+                <div className="map-placeholder">
+                    {loading ? (
+                         <div className="loading-state">
+                             <Navigation className="animate-spin" size={48} color="#2c3e50" />
+                             <p>Locating you...</p>
+                         </div>
+                    ) : (
+                         <div className="error-state">
+                             <p>{error || "Please search for a location to begin."}</p>
+                         </div>
+                    )}
+                </div>
+            )}
+            
+            {loading && mapCenter && (
+                <div className="loading-overlay-floating">
+                    <Navigation className="animate-spin" size={32} color="#2c3e50" />
+                    <span>Searching...</span>
+                </div>
             )}
         </div>
         
@@ -243,7 +317,7 @@ function App() {
                 </div>
               </li>
             ))}
-            {churches.length === 0 && (
+            {churches.length === 0 && !loading && (
                 <li className="church-item">No Catholic churches found nearby.</li>
             )}
           </ul>
