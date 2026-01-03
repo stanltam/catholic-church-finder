@@ -47,6 +47,12 @@ export const findNearbyChurches = async (lat: number, lon: number, radius: numbe
         const churchLon = element.lon || element.center.lon;
         const dist = calculateDistance(lat, lon, churchLat, churchLon);
         const name = element.tags.name || "Unknown Catholic Church";
+        
+        // Filter out known non-Catholic churches that might be mis-tagged or appear due to data issues
+        if (name.includes("Swatow Christian") || name.includes("Lutheran") || name.includes("Methodist") || name.includes("Baptist")) {
+             return null;
+        }
+
         const schedule = getMassSchedule(name);
         
         const church: Church = {
@@ -63,7 +69,9 @@ export const findNearbyChurches = async (lat: number, lon: number, radius: numbe
         church.nextMassTime = calculateNextMassTime(church);
 
         return church;
-    }).sort((a: Church, b: Church) => (a.distance || 0) - (b.distance || 0));
+    })
+    .filter((c: Church | null) => c !== null) // Remove nulls
+    .sort((a: Church, b: Church) => (a.distance || 0) - (b.distance || 0));
 
   } catch (error) {
     console.error("Error fetching churches:", error);
